@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" 
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>ABCD</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script src='your_reports.js' type='text/javascript'></script>
+<script src='switch.js' type='text/javascript'></script>
+
+</head>
+<body>
+ABCD Behavior Change Dashboard. 
+<br><br>
+<iframe 
+	id='hourFrame'
+	name='hourFrame'
+	style="position:fixed;top:30px;bottom:0px;width:100%;height:90%" 
+	name="hourFrame" 
+	src="about:blank"  
+	>
+Who does not support iframes?
+</iframe>
+<script type="text/javascript" defer="defer">
+	//Start things off... ChangeSrc just calls itself again and again...
+	window.onload = ChangeSrc();
+	document.getElementById('hourFrame').src = reports[0];
+
+</script>
+</body>
+</html>
